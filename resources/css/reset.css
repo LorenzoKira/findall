@@ -1,0 +1,72 @@
+@layer reset {
+
+    *, *::after, *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        z-index: auto;
+    }
+
+    html {
+        font: 1rem/line normal sans-serif;
+        line-height: 1.2;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, td, th, span {
+        font-size: inherit;
+        color: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        overflow-wrap: break-word;
+        display: block;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+
+    a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    input, textarea, select {
+        outline: none;
+        border: none;
+        color: inherit;
+    }
+
+    ::placeholder {
+        color: inherit;
+    }
+
+
+
+    button {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: inherit;
+    }
+
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+        
+}
