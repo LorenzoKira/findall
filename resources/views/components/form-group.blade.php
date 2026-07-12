@@ -3,7 +3,7 @@
         @if ($showForgot)
             <div class="flex justify-between">
                 <label for="{{ $id }}">{{ $text }}</label>
-                <a href="#" class="text-blue-600">Mot de passe oublié ?</a>
+                <a href="#" class="text-primary">Mot de passe oublié ?</a>
             </div>
 
         @else

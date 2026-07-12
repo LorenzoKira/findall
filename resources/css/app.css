@@ -7,6 +7,20 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+        --color-primary: #165DF0;
+        --color-primary-hover: #0A5DF0EE;
+        --color-primary-tint-1: #1250CC;
+        --color-primary-tint-2: #0F40A3;
+        --color-primary-tint-3: #0B307A;
+        --color-primary-dark: #072052;
+
+        --color-primary-outline: #3e86f17c;
+
+        --text-color: #181818;
+        --border-color: #ebebeb;
+        --color-white: #F5F5F5;
+        --color-hover: #00000003;
 }
 
 
@@ -19,16 +33,11 @@
         padding: 0;
     }
 
-    :root {
-        --text-color: #181818;
-        --border-color: #ebebeb;
-        --white: #f7f2f2;
-    }
-
 
     html {
         color: var(--text-color);
         line-height: 1.2;
+        font-family: 'Manrope';
     }
 
     body {
@@ -44,8 +53,8 @@
     }
 
     .auth-layout-container::before {
-        content: "\"";
-        transform: rotateZ(-45deg) translateX(50%);
+        content: "🙶";
+        transform: rotateZ(-30deg) translateX(50%);
         color: var(--text-color);
         position: absolute;
         font-size: 3rem;
@@ -71,15 +80,16 @@
 
 
     .auth-layout-title {
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 1.5;
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.6;
     }
 
     .auth-layout-subtitle {
         color: var(--text-color);
-        font-size: .8rem;
-        margin-bottom: 2em;
+        font-size: .7rem;
+        font-weight: 500;
+        margin-bottom: 1.7em;
     }
 
     .auth-layout-login-buttons {
@@ -88,7 +98,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
 
         a {
             flex-grow: 1;
@@ -113,25 +123,27 @@
 
 
         a, label, input {
-            font-size: .8rem;
-            font-weight: 500;
+            font-size: .78rem;
+            font-weight: 600;
         }
 
         label {
             margin-bottom: .4em;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         input {
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            padding: .7em 1.2em;
-            color: #727272;
+            padding: .75em 1.2em;
+            color: #545454;
         }
 
 
-        input:focus { 
-            outline: 1px solid #00000033;
+        input:focus {
+            outline: none;
+            border-color: var(--color-primary-outline);
+            box-shadow: 0 0 2px 1px var(--color-primary-outline);
         }
 
         input::placeholder {
@@ -146,15 +158,15 @@
 
     .term-link {
         line-height: 1;
-        color: rgb(15, 100, 228);
+        color: var(--color-primary);
     }
 
     .have-account {
         font-size: .7rem;
-        margin-top: 1em;
+        margin-top: .3em;
 
         a {
-            color: rgb(34, 96, 221);
+            color: var(--color-primary-tint-1);
         }
     }
 
@@ -165,12 +177,13 @@
 @layer components {
 
     .button {
-        padding: 1em 1.5em;
-        color: var(--text-color);
-        padding-block: .4em;
+        padding: .6em 1.5em;
         border-radius: .5em;
         cursor: pointer;
         border: 1px solid var(--border-color);
+        font-weight: 400;
+        font-family: 'Poppins';
+        font-size: .9rem;
     }
 
 }
